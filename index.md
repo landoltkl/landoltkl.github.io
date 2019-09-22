@@ -2,7 +2,8 @@
 layout: default
 ---
 
-[Curriculum vitae](./cv.html).  
+# Links
+[Curriculum vitae](./cv.html)  
 [LinkedIn](https://www.linkedin.com/in/kyle-landolt)
 
 # About me
@@ -16,7 +17,7 @@ Outside of work I enjoy setting up Raspberry Pi webcams to record my roommate’
 
 
 
-# Coding examples
+<!-- # Coding examples -->
 
-Building footprints
-[Random Forest](./)
+<!-- Building footprints -->
+<!-- [Random Forest](./) -->
