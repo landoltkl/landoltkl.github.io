@@ -1,6 +1,6 @@
-title: Minimal theme
-logo: /assets/img/logo.png
-description: Minimal is a theme for GitHub Pages.
-show_downloads: true
+title: Hi, my name is Kyle Landolt.
+# logo: /assets/img/kyle.png
+description: Here are some things about me.
+show_downloads: false
 google_analytics:
 theme: jekyll-theme-minimal
