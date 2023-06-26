@@ -11,9 +11,9 @@ I try to fit the nature of the world onto silicon chips. And that doesn’t just
 
 Being able to answer complex geospatial questions using a variety of open-source software has been driving my passion and ultimately my career. I love to see spatial data make an impact in how we understand the world and how that benefits both the people and the natural environment that the world is composed of.
 
-I apply that mentality to my work at Oak Ridge National Lab in the National Security Emerging Technologies Division: Human Dynamics group. I use Python, R, and PostgreSQL to develop, manage, analyze, and present spatial data to better understand the nature of human settlements across the globe. These questions give me the opportunity to explore geospatial, statistical, and machine learning techniques to take advantage of ‘big data’ and provide explanations for large-scale phenomena.
+I apply that mentality to my work at USGS with the Upper Midwest Environmental Sciences Center. I use Python, machine learning, remote sensing, and other tools to detect, analyze, and understand wildlife in aerial imagery. This work gives me the opportunity to explore geospatial, statistical, and machine learning techniques to take advantage of ‘big data’ and provide explanations for large-scale phenomena.
 
-Outside of work I enjoy setting up Raspberry Pi webcams to record my roommate’s cat sleep all day. The nature of the world doesn’t always have to be so complex.
+Outside of work I enjoy baking, fishing, kayaking, hiking, and spending time with my dog Russ.
 
 
 

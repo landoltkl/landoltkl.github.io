@@ -18,8 +18,30 @@ Major: Ecological Restoration
 Department of Ecosystem Science and Management, Texas A&M University  
 
 ## WORK EXPERIENCE
+Geographer  
+United States Geological Survey (11/2019 - Present)  
+Upper Midwest Environmental Sciences Center  
++ Lead the design, development, and application of machine learning methods for geospatial applications
++ Adopt the leading edge of software and technology to meet project requirements
++ Develop custom object detection models to automate the detection of wildlife in aerial imagery
++ Coordinate with collaborators to integrate efforts for automating the classification of wildlife from aerial
+imagery
++ Archive big (300+ TB) image datasets from multiple organizations for analysis
++ Process digital aerial imagery from remote sensing surveys for more efficient GeoTIFF and compression
+storage
++ Host an annotation tool to distribute imagery to users for the purpose of collecting annotation data for
+machine learning model development
++ Provide guidance and expertise for machine learning and remote sensing applications, ranging from UAS to
+crewed aircraft for optical and thermal imagery
++ Prepare reports, papers, and presentations that detail analyses and results to both technical and non-technical
+audiences
++ Read and review the latest research developments in the field of artificial intelligence and machine learning
+to familiarize myself with the state-of-the-art science and methods
++ Attend conferences and workshops focusing on geographic and remote sensing applications
+
+
 Post-Master’s Research Associate  
-Oak Ridge National Lab (6/2017 – Present)  
+Oak Ridge National Lab (6/2017 – 11/2019)  
 National Security Emerging Technologies Division  
 + Write Python scripts to manipulate spatial data for the development of the LandScan dataset
 + Automate GIS tasks with Python and R
@@ -51,16 +73,18 @@ Department of Ecosystem Science and Management
 
 ## TECHNICAL SKILLS
 **Software:**
-• ArcGIS (Skill Level: Advanced)
+• ArcGIS (Skill Level: Intermediate)
 • QGIS (Skill Level: Beginner)
 • ENVI 5.2 (Skill Level: Beginner)
 • LaTeX (Skill Level: Beginner)
 • Microsoft Office (Word, Powerpoint, Excel) (Skill Level: Advanced)
 • PostgreSQL (Skill Level: Beginner)
+• QGIS (Skill Level: Advanced)
+• Slurm (Skill Level: Beginner)
 
 **Computer Languages:**
-• R Programing Language (Skill Level:Intermediate)
-• Python (Skill Level: Intermediate)
+• R Programing Language (Skill Level: Intermediate)
+• Python (Skill Level: Advanced)
 • Javascript (Skill Level: Beginner)
 • Bash (Skill Level: Beginner)
 
@@ -113,8 +137,20 @@ Travel Award, Fall 2015: From the Graduate Student Senate, University of Tenness
 
 Applied Biodiversity Science (ABS) NSF-IGERT Program at Texas A&M University. Summer 2013. “The spatial and temporal variability of *Triadica sebifera* germination”. Principal Undergraduate Investigator (w/Mentor: Dr. Rogers), $800.
 
+## PUBLICATIONS
+Luz‐Ricca, Emilio, Kyle Landolt, Bradley A. Pickens, and Mark Koneff. "Automating sandhill crane counts from nocturnal thermal aerial imagery using deep learning." Remote Sensing in Ecology and Conservation 9, no. 2 (2023): 182-194.
+
+Miao, Zhongqi, Stella X. Yu, Kyle L. Landolt, Mark D. Koneff, Timothy P. White, Luke J. Fara, Enrika J. Hlavacek, Bradley A. Pickens, Travis J. Harrison, and Wayne M. Getz. "Challenges and solutions for automated avian recognition in aerial imagery." Remote Sensing in Ecology and Conservation (2022).
+
+*MS Thesis*  
+Landolt, Kyle Lawrence. "Developing Historical Productivity Maps for the Blue Oak Woodlands in California using Remote Sensing and Dendrochronology." (2016).
+[Masters Thesis](https://trace.tennessee.edu/utk_gradthes/4011/)
+
+
 ## PRESENTATIONS
 *Conference Presentations*  
+Landolt, K. L., 2022: Machine learning for automated detection and classification of seabirds, waterfowl, and other marine wildlife from digital aerial imagery. State of the Science Workshop on Wildlife and Offshore Wind Energy, Tarrytown, New York.
+​
 Landolt, K. L., Washingon-Allen, R.A., Nagle, Nicholas N., Grissino-Mayer, Henri D., 2017: Developing historical productivity maps for the blue oak woodlands in California using remote sensing and dendrochronology. Annual Meeting, Association of American Geographers, Boston, Massachusetts.
 
 Landolt, K. L., Washington-Allen, R. A., Nagle, Nicholas N., Grissino-Mayer, Henri D., 2015: Towards the Development of Historical Indicators of Spatial Carbon Dynamics in Drylands: A Blue Oak Woodlands of California Case Study. Annual Meeting, American Geophysical Union, San Francisco, California.
@@ -129,6 +165,7 @@ Washington-Allen, R. A., Landolt, K. L., Emanuel, R. E., Therrell, M. D., Nagle 
 
 *Internship Presentations*  
 Landolt, K. L., Vannan, Suresh K.S., Boyer, Alison G., McNelis, Jack, Wright, Daine, and McMurry, Benjamin, 2016. Text mining trends in published research that use data from the ORNL DAAC. Internship at Environmental Sciences Division: Distributed Active Archive Center. Summer 2016.
+
 ## LEADERSHIP
 + ASPRS Social Media Chair	(8/2019 - Present)
 + Graduate Association of Research in Geography Undergraduate Liaison	(5/2016 – 5/2017)
