@@ -37,6 +37,10 @@ defaults:
       path: "assets/img"
     values:
       image: true
+  - scope:
+      path: "assets/cv"
+    values:
+      image: false
 
 # Exclude from processing.
 # The following items will not be processed, by default.
