@@ -4,10 +4,10 @@ title: Curriculum Vitae
 permalink: /cv/
 ---
 
-<a href="../assets/cv/cv_landolt.pdf" download>Click to Download</a>
+<a href="../assets/cv/cv_landolt.pdf" download>Click to Download Curriculum Vitae</a>
 
 # Profile
-Technically proficient geographer who generates insights into geospatial data using a variety of computational skill sets. Persistent and adaptable n working with team members and subject matter experts (SMEs). Uses machine learning, geographic information systems (GIS), and Python programming to create solutions for desired objectives by constructing effective and operational workflows for processing geospatial data.
+Technically proficient geographer who generates insights into geospatial data using a variety of computational skill sets. Persistent and adaptable in working with team members and subject matter experts (SMEs). Uses machine learning, geographic information systems (GIS), and Python programming to create solutions for desired objectives by constructing effective and operational workflows for processing geospatial data.
 
 * Five years of experience leading geospatial technical applications of machine learning, data pipelines, and annotation tool development to meet project objectives with a federal research agency.
 * Proficient in drafting robust documentation on projects to allow external users to replicate methodologies.
