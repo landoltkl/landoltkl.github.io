@@ -45,9 +45,3 @@ Outside of work I enjoy baking, fishing, kayaking, hiking, and spending time wit
     <img src="../assets/img/IMG_20250412_183143_jek.JPG" alt="Man in a jacket"> 
     </div>
 </div>
-
-
-<div class="image">
-</div>
-
-

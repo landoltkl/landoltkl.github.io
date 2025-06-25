@@ -42,6 +42,11 @@ defaults:
     values:
       image: false
 
+header_pages:
+  - portfolio.markdown
+  - cv.markdown
+  - current_research.markdown
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
