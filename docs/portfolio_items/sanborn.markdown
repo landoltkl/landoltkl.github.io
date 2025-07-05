@@ -26,8 +26,8 @@ body { margin: 0; padding: 0; }
         container: 'map',
         style: 'mapbox://styles/landoltkl/cmcqkoydf00mc01s1clc65muj',
         projection: 'globe', // Display the map as a globe, since satellite-v9 defaults to Mercator
-        zoom: 1,
-        center: [30, 15]
+        zoom: 15,
+        center: [43.814,-91.252]
     });
     map.addControl(new mapboxgl.NavigationControl());
     map.scrollZoom.disable();
