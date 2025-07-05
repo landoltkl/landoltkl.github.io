@@ -7,7 +7,7 @@ permalink: /portfolio/sanborn
 <html>
 <head>
 <meta charset="utf-8">
-<title>Guides</title>
+<title>Sanborn Map</title>
 <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
 <link href="https://api.mapbox.com/mapbox-gl-js/v3.12.0/mapbox-gl.css" rel="stylesheet">
 <script src="https://api.mapbox.com/mapbox-gl-js/v3.12.0/mapbox-gl.js"></script>
@@ -19,6 +19,7 @@ body { margin: 0; padding: 0; }
 </style>
 </head>
 <body>
+Digitizing historical 1884 Sanborn Maps for La Crosse, Wisconsin, to 3D polygons for visualization.
 <div id="map"></div>
 <script>
 	mapboxgl.accessToken = 'pk.eyJ1IjoibGFuZG9sdGtsIiwiYSI6ImNtYzg3Y2tqNTB0ZzUybHBrdmNpNzVtNWUifQ.nkZuU2AjjAtWrJ_LLfXulA';
