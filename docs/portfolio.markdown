@@ -16,6 +16,18 @@ permalink: /portfolio/
       padding: 20px;
       box-sizing: border-box;
     }
+    .controls {
+      max-width: 1000px;
+      margin: 0 auto 20px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 10px;
+    }
+    select {
+      padding: 8px;
+      font-size: 16px;
+    }
     .grid-container {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -24,8 +36,8 @@ permalink: /portfolio/
       max-width: 1000px;
       margin: 0 auto;
     }
-    .grid-button {
-      background-color:rgb(104, 102, 142);
+    /* .grid-button {
+      background-color:#4681f4;
       color: white;
       border: none;
       border-radius: 8px;
@@ -33,58 +45,85 @@ permalink: /portfolio/
       padding: 15px;
       cursor: pointer;
       transition: background-color 0.3s ease;
-      width: 150px;
-      height: 150px;
+      width: 100%;
       box-sizing: border-box;
+    }     */
+    .grid-button img {
+      max-width: 100%;
+      max-height: 90px;
+      object-fit: contain;
+      border-radius: 6px;
+    }
+    .grid-button span {
+      margin-top: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #333;
     }
     .grid-button:hover {
-      background-color:rgb(71, 73, 71);
+      background-color: #45a049;
+    }
+    .hidden {
+      display: none;
     }
   </style>
 </head>
 <body>
 
+  <div class="controls">
+    <label for="categoryFilter">Filter by category:</label>
+    <select id="categoryFilter">
+      <option value="all">All</option>
+      <option value="conf_pres">Conferences and Presentations</option>
+      <option value="pub">ScienceBase Publications</option>
+      <option value="personal">Personal Projects</option>
+    </select>
+  </div>
+
   <div class="grid-container" id="buttonGrid"></div>
 
   <script>
     const pages = [
-      { label: "University of Michigan Poster", url: "/portfolio/umich" },
-      { label: "Images and annotations to automate the classification of avian species", url: "https://www.sciencebase.gov/catalog/item/63bf21cdd34e92aad3cdac5a" },
-      { label: "Aerial thermal imagery of the Central Platte River Valley and bounding box annotations of sandhill cranes", url: "https://www.sciencebase.gov/catalog/item/634eb641d34e47431c1543d4" },
-      { label: "Code, imagery, and annotations for training a deep learning model to detect wildlife in aerial imagery", url: "https://www.sciencebase.gov/catalog/item/658da7c1d34e3265ab14bb00" },
-      { label: "La Crosse, Wisconsin, Sanborn Maps", url: "/portfolio/sanborn" }
+      { label: "University of Michigan Poster", url: "/portfolio/umich", category: "conf_pres" , img_display: "../assets/img/UMICH_2023_Poster.png"},
+      { label: "Images and annotations to automate the classification of avian species", url: "https://www.sciencebase.gov/catalog/item/63bf21cdd34e92aad3cdac5a" , category: "pub" , img_display: "../assets/img/USGS_logo_green.png"},
+      { label: "Aerial thermal imagery of the Central Platte River Valley and bounding box annotations of sandhill cranes", url: "https://www.sciencebase.gov/catalog/item/634eb641d34e47431c1543d4", category: "pub", img_display: "../assets/img/USGS_logo_green.png" },
+      { label: "Code, imagery, and annotations for training a deep learning model to detect wildlife in aerial imagery", url: "https://www.sciencebase.gov/catalog/item/658da7c1d34e3265ab14bb00", category: "pub", img_display: "../assets/img/USGS_logo_green.png" },
+      { label: " La Crosse, Wisconsin, Sanborn Maps", url: "/portfolio/sanborn", category: "personal", img_display: "../assets/img/sanborn_lax_pearl.png" }
     ];
 
     const grid = document.getElementById("buttonGrid");
 
+    // Create buttons
     pages.forEach(page => {
-      const button = document.createElement("button");
-      button.className = "grid-button";
-      button.textContent = page.label;
-      button.onclick = () => window.location.href = page.url;
-      grid.appendChild(button);
+        const button = document.createElement("button");
+        button.className = "grid-button";
+        // button.textContent = page.label;
+        button.dataset.category = page.category;
+            //   button.style.backgroundImage = `url('${page.img_display}')`;
+        button.onclick = () => window.location.href = page.url;
+
+        const img = document.createElement("img");
+        img.src = page.img_display;
+        img.alt = page.label;
+        
+        const label = document.createElement("span");
+        label.textContent = page.label;
+        button.appendChild(img);
+        button.appendChild(label);
+        grid.appendChild(button);
+    });
+    // Filter logic
+    const filter = document.getElementById("categoryFilter");
+    filter.addEventListener("change", () => {
+      const selected = filter.value;
+      const buttons = document.querySelectorAll(".grid-button");
+
+      buttons.forEach(btn => {
+        const category = btn.dataset.category;
+        btn.classList.toggle("hidden", selected !== "all" && category !== selected);
+      });
     });
   </script>
 
 </body>
 </html>
-
-<h2>Conferences and Presentations</h2>
-<ul>
-<li><a href="/portfolio/umich">University of Michigan Poster</a></li>
-</ul>
-
-<h2>ScienceBase Publications</h2>
-<ul>
-<li><a href="https://www.sciencebase.gov/catalog/item/63bf21cdd34e92aad3cdac5a">
-Images and annotations to automate the classification of avian species</a><br></li>
-<li><a href="https://www.sciencebase.gov/catalog/item/634eb641d34e47431c1543d4">
- Aerial thermal imagery of the Central Platte River Valley and bounding box annotations of sandhill cranes</a><br></li>
-<li><a href="https://www.sciencebase.gov/catalog/item/658da7c1d34e3265ab14bb00">
-Code, imagery, and annotations for training a deep learning model to detect wildlife in aerial imagery</a><br></li>
-</ul>
-
-<h2>For Fun</h2>
-<ul>
-<li><a href="/portfolio/sanborn">La Crosse, Wisconsin, Sanborn Maps</a></li>
-</ul>
