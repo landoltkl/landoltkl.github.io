@@ -36,18 +36,22 @@ permalink: /portfolio/
       max-width: 1000px;
       margin: 0 auto;
     }
-    /* .grid-button {
-      background-color:#4681f4;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      font-size: 16px;
-      padding: 15px;
+    .grid-button {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      /* justify-content: space-between; */
+      background-color: #ffffff;
+      border: 2px solid #4CAF50;
+      border-radius: 10px;
+      padding: 10px;
+      height: 180px;
       cursor: pointer;
-      transition: background-color 0.3s ease;
-      width: 100%;
+      transition: transform 0.2s ease;
+      text-align: center;
       box-sizing: border-box;
-    }     */
+      max-width: 180px
+    }
     .grid-button img {
       max-width: 100%;
       max-height: 90px;
@@ -84,11 +88,36 @@ permalink: /portfolio/
 
   <script>
     const pages = [
-      { label: "University of Michigan Poster", url: "/portfolio/umich", category: "conf_pres" , img_display: "../assets/img/UMICH_2023_Poster.png"},
-      { label: "Images and annotations to automate the classification of avian species", url: "https://www.sciencebase.gov/catalog/item/63bf21cdd34e92aad3cdac5a" , category: "pub" , img_display: "../assets/img/USGS_logo_green.png"},
-      { label: "Aerial thermal imagery of the Central Platte River Valley and bounding box annotations of sandhill cranes", url: "https://www.sciencebase.gov/catalog/item/634eb641d34e47431c1543d4", category: "pub", img_display: "../assets/img/USGS_logo_green.png" },
-      { label: "Code, imagery, and annotations for training a deep learning model to detect wildlife in aerial imagery", url: "https://www.sciencebase.gov/catalog/item/658da7c1d34e3265ab14bb00", category: "pub", img_display: "../assets/img/USGS_logo_green.png" },
-      { label: " La Crosse, Wisconsin, Sanborn Maps", url: "/portfolio/sanborn", category: "personal", img_display: "../assets/img/sanborn_lax_pearl.png" }
+      { 
+        label: "University of Michigan Poster", 
+        url: "/portfolio/umich", 
+        category: "conf_pres" , 
+        img_display: "../assets/img/UMICH_2023_Poster.png"
+        },
+      { 
+        label: "Annotation dataset for of avian species", 
+        url: "https://www.sciencebase.gov/catalog/item/63bf21cdd34e92aad3cdac5a" , 
+        category: "pub" ,
+        img_display: "../assets/img/USGS_logo_green.png"
+        },
+      { 
+        label: "Aerial thermal imagery and annotations of sandhill cranes",
+        url: "https://www.sciencebase.gov/catalog/item/634eb641d34e47431c1543d4",
+        category: "pub",
+        img_display: "../assets/img/USGS_logo_green.png"
+        },
+      {
+        label: "Code, imagery, and annotations for training a DL model",
+        url: "https://www.sciencebase.gov/catalog/item/658da7c1d34e3265ab14bb00",
+        category: "pub",
+        img_display: "../assets/img/USGS_logo_green.png"
+        },
+      {
+        label: " La Crosse, Wisconsin, Sanborn Maps",
+        url: "/portfolio/sanborn",
+        category: "personal",
+        img_display: "../assets/img/sanborn_lax_pearl.png"
+        }
     ];
 
     const grid = document.getElementById("buttonGrid");
