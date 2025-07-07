@@ -113,6 +113,7 @@ Digitizing historical 1884 Sanborn Maps for La Crosse, Wisconsin, to 3D polygons
         spinGlobe();
     });
     spinGlobe();
+    <button id="toggle-layer">Toggle Layer</button>
     map.on('load', () => {
   // Replace 'your-layer-id' with the actual ID of the layer in your style
         const layerId = 'lax-draft1-4326-8-a6w8qq';
